@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="60df4e7387834b49bda839cf4ac63318" Name="Diagram1" ZoomLevel="80">
+        <EntityTypeShape EntityType="KetabexDbModel.Book" Width="1.5" PointX="0.75" PointY="14.875" />
+        <EntityTypeShape EntityType="KetabexDbModel.Comment" Width="1.5" PointX="3.625" PointY="11" />
+        <EntityTypeShape EntityType="KetabexDbModel.Follow" Width="1.5" PointX="13.375" PointY="13.5" />
+        <EntityTypeShape EntityType="KetabexDbModel.Like" Width="1.5" PointX="6" PointY="11" />
+        <EntityTypeShape EntityType="KetabexDbModel.Post" Width="1.5" PointX="3" PointY="14.625" />
+        <EntityTypeShape EntityType="KetabexDbModel.User" Width="1.5" PointX="9.75" PointY="7.75" />
+        <EntityTypeShape EntityType="KetabexDbModel.UserAuth" Width="1.5" PointX="9.375" PointY="14" />
+        <EntityTypeShape EntityType="KetabexDbModel.UserKey" Width="1.5" PointX="3" PointY="7.25" />
+        <EntityTypeShape EntityType="KetabexDbModel.UserSession" Width="1.5" PointX="5.25" PointY="7.375" />
+        <AssociationConnector Association="KetabexDbModel.FK_Post_Book" />
+        <AssociationConnector Association="KetabexDbModel.FK_Comment_Post" />
+        <AssociationConnector Association="KetabexDbModel.FK_Comment_User" />
+        <AssociationConnector Association="KetabexDbModel.FK_Follower_User" />
+        <AssociationConnector Association="KetabexDbModel.FK_Following_User" />
+        <AssociationConnector Association="KetabexDbModel.FK_Like_Post" />
+        <AssociationConnector Association="KetabexDbModel.FK_Like_User" />
+        <AssociationConnector Association="KetabexDbModel.FK_Post_User" />
+        <AssociationConnector Association="KetabexDbModel.FK_UserAuth_User" />
+        <AssociationConnector Association="KetabexDbModel.FK_UserKey_User" />
+        <AssociationConnector Association="KetabexDbModel.FK_UserSession_UserKey" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
